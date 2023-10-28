@@ -9,7 +9,8 @@ state of promises 1- pending
       
   consume a promises
   1. then() catch()
-  2.async await                
+  2.async await     
+             
 */
 
 import fs from 'node:fs/promises';
