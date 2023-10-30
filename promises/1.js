@@ -29,3 +29,6 @@ fs.readFile('data2.txt')  //return a promises
 
 // let output = fs.readFile('data.txt');
 // console.log(output)
+
+fs.readFile('data2.txt')
+function

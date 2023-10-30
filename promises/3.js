@@ -22,3 +22,28 @@ callPromises(14)
         console.log('catch block rejected')
         console.log(err);
     })
+
+
+/*
+consume Promise Method2: async await
+    - async and await keyword is must
+    - it doesn't have built in error handling, you need
+    to use try catch block
+
+*/
+
+// async function getResult(){
+//     try {
+//         let output = await callPromise(20);
+//         console.log(output);
+//         let output2 = await callPromise(20);
+//         console.log(output2);
+//         let output3 = await callPromise(20);
+//         console.log(output3);
+//     }
+//     catch(err){
+//         console.log(err);
+//         console.log("Something went wrong");
+//     }
+// }
+// getResult(); 
