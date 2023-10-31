@@ -1,5 +1,5 @@
 import axios from "axios";
-import fs from "node:fs"
+import fs from "node:fs/promises"
 
 
 
@@ -9,12 +9,9 @@ import fs from "node:fs"
                let data = (response.data);
                 // data.push(data);
         
-                fs.writeFile('data.json', JSON.stringify(data),(err)=>{
-                    if(err)throw err;
+                await fs.writeFile('data.json', JSON.stringify(data))
                     console.log("data inserted into file! ");
-                });
-        
-        
+            
             } catch (error) {
                console.log(error) 
             }
