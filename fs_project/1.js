@@ -9,3 +9,7 @@ fs.writeFile('sample.txt',data,(err)=>{
 }
 writeToAFile();
 
+/* 
+syntax
+fs.writeFile(filePath,dataToWrite,(err)=>{}) 000
+*/
