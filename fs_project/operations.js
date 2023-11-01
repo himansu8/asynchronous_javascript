@@ -27,7 +27,6 @@ function addUser(user){
         }
 
         data.push(user);
-// let data = [1,2]
         fs.writeFile('data.json', JSON.stringify(data), (err)=>{
             if(err) throw err;
             console.log("User inserted into file! ");
