@@ -15,7 +15,7 @@ state of promises 1- pending
 
 import fs from 'node:fs/promises';
 
-fs.readFile('data2.txt')  //return a promises
+fs.readFile('data.txt')  //return a promises
 .then((data)=>{          // promise resolve
     data= String(data);
     console.log(data)
@@ -30,5 +30,3 @@ fs.readFile('data2.txt')  //return a promises
 // let output = fs.readFile('data.txt');
 // console.log(output)
 
-fs.readFile('data2.txt')
-function
