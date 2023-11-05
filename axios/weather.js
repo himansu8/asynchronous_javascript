@@ -6,25 +6,35 @@ function hitAPI(cityName) {
 }
 
 
-async function addWeather(cityName){
-    try {
-        let data = await fs.readFile('data1.json');
-        data = JSON.parse(data);
+// async function addWeather(cityName){
+//     try {
+//         let data = await fs.readFile('data1.json');
+//         data = JSON.parse(data);
    
-        const res = await hitAPI(cityName);
-        data.push(res.data)
-        // let data = res.data//.main.temp;
-        //console.log(`The weather report of ${cityName} ${data}`);
-        await fs.writeFile('data1.json',JSON.stringify(data))
-            console.log("data was saved successfully");
+//         const res = await hitAPI(cityName);
+//         data.push(res.data)
+//         // let data = res.data//.main.temp;
+//         //console.log(`The weather report of ${cityName} ${data}`);
+//         await fs.writeFile('data1.json',JSON.stringify(data))
+//             console.log("data was saved successfully");
 
        
 
-    } catch (error) {
+//     } catch (error) {
         
-        console.log(error);
+//         console.log(error);
+//     }
+// }
+async function displayCityWeather(cityName){
+    try {
+        const res = await hitAPI(cityName);
+        let data = res.data;
+        console.log(`The weather report at ${cityName} are given below ${JSON.stringify(data)}`);
+    } catch (error) {
+       console.log(error);
     }
 }
+
 // main();
 async function displayTemp(cityName){
     try {
@@ -41,4 +51,4 @@ async function displayTemp(cityName){
 
 
 
-export {addWeather, displayTemp}
+export {displayTemp, displayCityWeather}

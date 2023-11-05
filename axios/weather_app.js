@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import {addWeather, displayTemp} from './weather.js'
+import {displayTemp,displayCityWeather} from './weather.js'
 
 const main = () => {
     console.clear();
@@ -24,9 +24,14 @@ const main = () => {
         console.log("Thank you for using our CLI Application, See you Again!");
         return;
 
+        // case 1:
+        // cityName = readlineSync.question("Enter the city name: ");
+        // addWeather(cityName);
+        // return;
+        
         case 1:
         cityName = readlineSync.question("Enter the city name: ");
-        addWeather(cityName);
+        displayCityWeather(cityName);
         return;
 
         case 2:

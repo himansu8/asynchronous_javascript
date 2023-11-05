@@ -1,1 +1,43 @@
-[{"coord":{"lon":85.8333,"lat":20.2333},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50n"}],"base":"stations","main":{"temp":302.27,"feels_like":306.14,"temp_min":302.27,"temp_max":302.27,"pressure":1011,"humidity":70},"visibility":5000,"wind":{"speed":2.06,"deg":190},"clouds":{"all":20},"dt":1699012937,"sys":{"type":1,"id":9113,"country":"IN","sunrise":1698970740,"sunset":1699011682},"timezone":19800,"id":1275817,"name":"Bhubaneswar","cod":200}]
+{
+    "coord": {
+        "lon": 85.8333,
+        "lat": 20.2333
+    },
+    "weather": [
+        {
+            "id": 721,
+            "main": "Haze",
+            "description": "haze",
+            "icon": "50d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 302.27,
+        "feels_like": 306.94,
+        "temp_min": 302.27,
+        "temp_max": 302.27,
+        "pressure": 1016,
+        "humidity": 74
+    },
+    "visibility": 3500,
+    "wind": {
+        "speed": 2.06,
+        "deg": 10
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1699159919,
+    "sys": {
+        "type": 1,
+        "id": 9113,
+        "country": "IN",
+        "sunrise": 1699143601,
+        "sunset": 1699184426
+    },
+    "timezone": 19800,
+    "id": 1275817,
+    "name": "Bhubaneswar",
+    "cod": 200
+}
