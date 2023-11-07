@@ -5,9 +5,7 @@ import fs from 'node:fs/promises';
     async await
     tr catch block
 }]
-
 */
-
 //CRUD: Create, Read, Update and Delete
 
 async function addUser(user){

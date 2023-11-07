@@ -3,7 +3,6 @@ import {addUser, displayUser, updateUser, deleteUser} from './operations.js'
 
 const main = () => {
     console.clear();
-
     console.log("********************************************")
     console.log("\t\tFS-PROJ CLI\t\t");
     console.log("********************************************")
@@ -16,7 +15,6 @@ const main = () => {
     3. Press 3 to Update User Age
     4. Press 4 to Delete User 
     `)
-
     let option = readlineSync.questionInt("Enter your options: ");
     let userName, userEmail, userAge;
     switch (option) {
@@ -61,9 +59,7 @@ const main = () => {
             console.log("Invalid Option")
             break;
     }
-
     let willContinue = readlineSync.question("Do you want to continue? (Y/N): ");
-
     // Handling all this conditions y, Y, yes, YES, Yes, yEs, yES 
     willContinue = willContinue.toLowerCase()
     if(willContinue == 'yes' || willContinue == 'y'){
